@@ -23,7 +23,7 @@ The **A**I, **L**anguage, **Le**arning, **G**eneralization, and **Ro**bustness (
 
 Here are the research questions we have been working on recently:
 
-- **How can we scientifically understand large lanuage models?** Our scientific understanding of LLMs lags far behind our ability to engineer them. To bridge this gap, our recent work has studied in-context learning from both a data-centric and mechanistic perspective; we have also investigated the [predictability of different LLM capabilities](https://arxiv.org/abs/2305.14947).
+- **How can we scientifically understand large language models?** Our scientific understanding of LLMs lags far behind our ability to engineer them. To bridge this gap, our recent work has studied in-context learning from both a data-centric and mechanistic perspective; we have also investigated the [predictability of different LLM capabilities](https://arxiv.org/abs/2305.14947).
 
 - **How should we benchmark modern NLP systems?** I have long advocated for benchmarking robustness and uncertainty of NLP systems. Our recent work has benchmarked generalization to long-tail examples and calibration of LLMs. We have also shown that benchmarking under distribution shift can reveal advantages of neurosymbolic approaches.
 
