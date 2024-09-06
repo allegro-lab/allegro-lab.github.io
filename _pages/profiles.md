@@ -1,5 +1,4 @@
 ---
----
 layout: profiles
 permalink: /people/
 title: people
@@ -28,5 +27,3 @@ profiles:
       <p>Your City, State 12345</p>
 ---
 
----
----
