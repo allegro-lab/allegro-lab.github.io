@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Daniel Firebanks-Quevedo
-description: PhD
+description: MS
 img: assets/img/prof_pic.jpg
 importance: 3
-category: PhD
+category: MS
 related_publications: true
 ---
 

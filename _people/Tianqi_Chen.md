@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Tianqi Chen
-description: Undergraduate Student
+description: MS Student
 img: assets/img/prof_pic.jpg
 importance: 3
-category: Undergraduate
+category: MS
 related_publications: true
 ---
 

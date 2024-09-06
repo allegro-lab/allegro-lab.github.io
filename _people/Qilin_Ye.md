@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Qilin Ye
-description: Phd
+description: Undergraduate -> MS at Duke
 img: assets/img/prof_pic.jpg
 importance: 3
-category: Phd
+category: Alumni
 related_publications: true
 ---
 
