@@ -1,9 +1,90 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
+# Preprints
+arxiv:
+  full_name: arXiv
   color: "#00369f"
 
-"PhysRev":
-  url: https://journals.aps.org/
+# *ACL conferences
+acl:
+  full_name: Association for Computational Linguistics
+  short_name: ACL
+  color: "#00369f"
+emnlp:
+  full_name: Empirical Methods in Natural Language Processing
+  short_name: EMNLP
+  color: "#00369f"
+naacl:
+  full_name: North American Association for Computational Linguistics
+  short_name: NAACL
+  color: "#00369f"
+facl:
+  full_name: Findings of ACL
+  short_name: ACL Findings
+  omit_short: true
+  color: "#00369f"
+femnlp:
+  full_name: Findings of EMNLP
+  short_name: EMNLP Findings
+  omit_short: true
+  color: "#00369f"
+feacl:
+  full_name: Findings of EACL
+  short_name: EACL Findings
+  omit_short: true
+  color: "#00369f"
 
-"Vision":
+# *ACL workshops
+blackbox:
+  full_name: BlackBoxNLP Workshop
+  short_name: BlackBoxNLP
+  omit_short: true
+  color: "#00369f"
+mrqa:
+  full_name: Workshop on Machine Reading for Question Answering
+  short_name: MRQA
+  color: "#00369f"
+
+# Other conferences
+icml:
+  full_name: International Conference on Machine Learning
+  short_name: ICML
+  color: "#00369f"
+neurips:
+  full_name: Conference on Neural Information Processing Systems
+  short_name: NeurIPS
+  color: "#00369f"
+icassp:
+  full_name: International Conference on Acoustics, Speech, and Signal Processing
+  short_name: ICASSP
+  color: "#00369f"
+colm:
+  full_name: Conference on Language Modeling
+  short_name: COLM
+  color: "#00369f"
+aies:
+  full_name: AAAI/ACM Conference on AI, Ethics, and Society
+  short_name: AIES
+  color: "#00369f"
+
+# Other workshops
+odrum:
+  full_name: Open-Domain Reasoning Under Multi-Modal Settings Workshop at CVPR
+  short_name: O-DRUM
+  color: "#00369f"
+
+# Miscellaneous journals
+mbe:
+  full_name: Molecular Biology and Evolution
+  short_name: MBE
+  color: "#00369f"
+pnas:
+  full_name: Proceedings of the National Academy of Sciences
+  short_name: PNAS
+  color: "#00369f"
+
+# Other
+us_patent:
+  full_name: US Patent
+  color: "#009f36"
+dissertation:
+  full_name: Ph.D. Dissertation
   color: "#009f36"
