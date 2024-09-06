@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Robin Jia
-description: with background image
+description: Assistant Professor, Thomas Lord Department of Computer Science, University of Southern California
 img: assets/img/prof_pic.jpg
 importance: 1
-category: prof
+category: Professor
 related_publications: true
 ---
 
