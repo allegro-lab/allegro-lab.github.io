@@ -19,7 +19,7 @@ profiles:
       <p>Your City, State 12345</p>
   - align: left
     image: prof_pic.jpg
-    content: Deqing_Fu.md
+    content: people/Daniel_Firebanks-Quevedo.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>555 your office number</p>
@@ -27,7 +27,7 @@ profiles:
       <p>Your City, State 12345</p>
   - align: right
     image: prof_pic.jpg
-    content: Gustavo_Adolpho_Lucas_De_Carvalho.md
+    content: people/Deqing_Fu.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>555 your office number</p>
@@ -35,7 +35,7 @@ profiles:
       <p>Your City, State 12345</p>
   - align: left
     image: prof_pic.jpg
-    content: Johnny_Wei.md
+    content: people/Gustavo_Adolpho_Lucas_De_Carvalho.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>555 your office number</p>
@@ -43,7 +43,7 @@ profiles:
       <p>Your City, State 12345</p>
   - align: right
     image: prof_pic.jpg
-    content: Lorena_Yan.md
+    content: people/Johnny_Wei.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>555 your office number</p>
@@ -51,7 +51,79 @@ profiles:
       <p>Your City, State 12345</p>
   - align: left
     image: prof_pic.jpg
-    content: Maggie_Wang.md
+    content: people/Lorena_Yan.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>555 your office number</p>
+      <p>123 your address street</p>
+      <p>Your City, State 12345</p>
+  - align: right
+    image: prof_pic.jpg
+    content: people/Maggie_Wang.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>555 your office number</p>
+      <p>123 your address street</p>
+      <p>Your City, State 12345</p>
+  - align: left
+    image: prof_pic.jpg
+    content: people/Muru_Zhang.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>555 your office number</p>
+      <p>123 your address street</p>
+      <p>Your City, State 12345</p>
+  - align: right
+    image: prof_pic.jpg
+    content: people/Qilin_Ye.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>555 your office number</p>
+      <p>123 your address street</p>
+      <p>Your City, State 12345</p>
+  - align: left
+    image: prof_pic.jpg
+    content: people/Ryan_Wang.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>555 your office number</p>
+      <p>123 your address street</p>
+      <p>Your City, State 12345</p>
+  - align: right
+    image: prof_pic.jpg
+    content: people/Tianqi_Chen.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>555 your office number</p>
+      <p>123 your address street</p>
+      <p>Your City, State 12345</p>
+  - align: left
+    image: prof_pic.jpg
+    content: people/Tianyi_Zhou.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>555 your office number</p>
+      <p>123 your address street</p>
+      <p>Your City, State 12345</p>
+  - align: right
+    image: prof_pic.jpg
+    content: people/Ting-Yun_Chang.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>555 your office number</p>
+      <p>123 your address street</p>
+      <p>Your City, State 12345</p>
+  - align: left
+    image: prof_pic.jpg
+    content: people/Wang_Zhu.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>555 your office number</p>
+      <p>123 your address street</p>
+      <p>Your City, State 12345</p>
+  - align: right
+    image: prof_pic.jpg
+    content: people/Yuqing_Yang.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>555 your office number</p>
