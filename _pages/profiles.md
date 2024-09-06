@@ -1,5 +1,5 @@
 ---
-contentlayout: profiles
+layout: profiles
 permalink: /people/
 title: people
 description: members of the lab or group
@@ -19,10 +19,11 @@ profiles:
       <p>Your City, State 12345 placeholder</p>
   - align: left
     image: prof_pic.jpg
-    content: about_einstein.md
+    content: people/about_einstein copy.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>office number placeholder</p>
       <p>address street placeholder</p>
       <p>Your City, State 12345 placeholder</p>
+---
 ---
