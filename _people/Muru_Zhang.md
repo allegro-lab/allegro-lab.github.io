@@ -1,3 +1,14 @@
+---
+layout: page
+title: Muru Zhang
+description: Phd
+img: assets/img/prof_pic.jpg
+importance: 3
+category: Phd
+related_publications: true
+---
+
+
 Hi! I’m an incoming PhD student at the University of Southern California, where I will be advised by Professor Swabha Swayamdipta and Professor Robin Jia. I’m interested in all things related to language models, particularly in activation engineering, post-training adaptation, interpretability and efficiency.
 
 I completed both my Bachelor’s degree and Master’s degree at University of Washington and I was very fortunate to be part of Professor Noah A. Smith’s Lab.
