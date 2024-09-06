@@ -1,1 +1,0 @@
-Undergraduate Researcher, University of Southern California

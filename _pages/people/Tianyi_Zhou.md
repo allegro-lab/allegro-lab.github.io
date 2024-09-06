@@ -1,1 +1,0 @@
-I’m a second year PhD student in Computer Science at University of Southern California (USC). Before that, I received master degree in Computer Science from University of California San Diego. I am broadly interested in natural language processing and theoretical computer science. I am co-advised by Prof. Robin Jia and Prof. Vatsal Sharan.
