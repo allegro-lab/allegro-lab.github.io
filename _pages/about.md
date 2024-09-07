@@ -6,7 +6,7 @@ subtitle: <a href='https://cs.usc.edu'>Thomas Lord Department of Computer Scienc
 
 profile:
   align: right
-  image: assets/img/logo/logo-vertical-hires.png
+  image: logo/logo-vertical-hires.png
   image_circular: false # crops the image to make it circular
   # more_info: >
   #   <p>555 your office number</p>
