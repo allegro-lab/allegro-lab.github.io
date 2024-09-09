@@ -2,7 +2,7 @@
 layout: page
 title: Yuqing Yang
 description: 1st-year PhD student
-img: assets/img/prof_pic.jpg
+img: assets/img/people/yuqing.jpg
 importance: 7
 category: PhD
 related_publications: true
