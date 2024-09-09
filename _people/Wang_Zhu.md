@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Wang Zhu
-description: PhD Student
+title: Wang (Bill) Zhu
+description: 4th-year Ph.D. Student
 img: assets/img/people_image/wang.png
 importance: 3
 category: PhD
