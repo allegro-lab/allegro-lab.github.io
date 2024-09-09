@@ -2,7 +2,7 @@
 layout: page
 title: Wang Zhu
 description: PhD Student
-img: assets/img/people/wang.png
+img: assets/img/people_image/wang.png
 importance: 3
 category: PhD
 related_publications: true

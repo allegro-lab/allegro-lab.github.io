@@ -2,7 +2,7 @@
 layout: page
 title: Tianyi Lorena Yan
 description: Undergraduate Student
-img: assets/img/prof_pic.jpg
+img: assets/img/people_image/lorena.JPG
 importance: 3
 category: Undergraduate
 related_publications: true
