@@ -2,7 +2,7 @@
 layout: page
 title: Ting-Yun Chang
 description: PhD Student
-img: assets/img/ting-yun.jpg
+img: assets/img/people_image/ting-yun.jpg
 importance: 3
 category: PhD
 related_publications: true
