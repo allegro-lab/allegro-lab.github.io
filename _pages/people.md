@@ -2,7 +2,7 @@
 layout: page
 title: people
 permalink: /people/
-description: lab members
+description:
 nav: true
 nav_order: 4
 display_categories: [Professor, PhD, MS, Undergraduate, Alumni]
