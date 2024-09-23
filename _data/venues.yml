@@ -1,6 +1,7 @@
 # Preprints
 arxiv:
   full_name: arXiv
+  abbr: arXiv
   color: "#34A853"
 
 # *ACL conferences
