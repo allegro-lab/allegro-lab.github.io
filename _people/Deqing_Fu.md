@@ -2,7 +2,7 @@
 layout: page
 title: Deqing Fu
 description: 3rd-year PhD Student
-img: assets/img/dummy.png
+img: assets/img/peple_image/deqing.jpeg
 importance: 4
 category: PhD
 related_publications: true

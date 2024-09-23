@@ -2,7 +2,7 @@
 layout: page
 title: Muru Zhang
 description: PhD
-img: assets/img/dummy.png
+img: assets/img/peple_image/muru.jpeg
 importance: 7
 category: PhD
 related_publications: true

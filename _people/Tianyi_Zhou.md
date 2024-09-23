@@ -2,7 +2,7 @@
 layout: page
 title: Tianyi Zhou
 description: 2nd-year PhD Student
-img: assets/img/dummy.png
+img: assets/img/peple_image/tianyi.jpeg
 importance: 6
 category: PhD
 related_publications: true
