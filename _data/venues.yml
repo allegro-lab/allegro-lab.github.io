@@ -12,24 +12,29 @@ acl:
 emnlp:
   full_name: Empirical Methods in Natural Language Processing
   short_name: EMNLP
+  abbr: EMNLP
   color: "#00369f"
 naacl:
   full_name: North American Association for Computational Linguistics
   short_name: NAACL
+  abbr: NAACL
   color: "#00369f"
 facl:
   full_name: Findings of ACL
   short_name: ACL Findings
+  abbr: ACL Findings
   omit_short: true
   color: "#00369f"
 femnlp:
   full_name: Findings of EMNLP
   short_name: EMNLP Findings
+  abbr: EMNLP Findings
   omit_short: true
   color: "#00369f"
 feacl:
   full_name: Findings of EACL
   short_name: EACL Findings
+  abbr: EACL Findings
   omit_short: true
   color: "#00369f"
 
@@ -48,22 +53,27 @@ mrqa:
 icml:
   full_name: International Conference on Machine Learning
   short_name: ICML
+  abbr: ICML
   color: "#00369f"
 neurips:
   full_name: Conference on Neural Information Processing Systems
   short_name: NeurIPS
+  abbr: NeurIPS
   color: "#00369f"
 icassp:
   full_name: International Conference on Acoustics, Speech, and Signal Processing
   short_name: ICASSP
+  abbr: ICASSP
   color: "#00369f"
 colm:
   full_name: Conference on Language Modeling
   short_name: COLM
+  abbr: COLM
   color: "#00369f"
 aies:
   full_name: AAAI/ACM Conference on AI, Ethics, and Society
   short_name: AIES
+  abbr: AIES
   color: "#00369f"
 
 # Other workshops
