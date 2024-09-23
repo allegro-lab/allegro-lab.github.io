@@ -2,7 +2,7 @@
 layout: page
 title: Johnny Wei
 description: PhD Student
-img: assets/img/prof_pic.jpg
+img: assets/img/dummy.png
 importance: 1
 category: PhD
 related_publications: true

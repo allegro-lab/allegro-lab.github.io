@@ -2,7 +2,7 @@
 layout: page
 title: Gustavo Adolpho Lucas De Carvalho
 description: Master
-img: assets/img/prof_pic.jpg
+img: assets/img/dummy.png
 importance: 3
 category: MS
 related_publications: true

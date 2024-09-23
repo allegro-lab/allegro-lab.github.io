@@ -2,7 +2,7 @@
 layout: page
 title: Maggie Wang
 description: Undergraduate Student
-img: assets/img/prof_pic.jpg
+img: assets/img/dummy.png
 importance: 3
 category: Undergraduate
 related_publications: true

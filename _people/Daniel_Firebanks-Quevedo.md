@@ -2,7 +2,7 @@
 layout: page
 title: Daniel Firebanks-Quevedo
 description: MS
-img: assets/img/prof_pic.jpg
+img: assets/img/dummy.png
 importance: 3
 category: MS
 related_publications: true

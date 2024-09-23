@@ -2,7 +2,7 @@
 layout: page
 title: Ameya Godbole
 description: 2nd-year PhD Student
-img: assets/img/prof_pic.jpg
+img: assets/img/dummy.png
 importance: 2
 category: PhD
 related_publications: true
