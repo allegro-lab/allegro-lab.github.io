@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Ameya Godbole
+title: Simone Branchetti
 description: Visiting PhD Student
 img: assets/img/people_image/simone.png
 importance: 1
