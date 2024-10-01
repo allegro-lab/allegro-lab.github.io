@@ -2,7 +2,7 @@
 layout: page
 title: Ameya Godbole
 description: Visiting PhD Student
-img: assets/img/people_image/simone.jpeg
+img: assets/img/people_image/simone.png
 importance: 1
 category: Visiting Scholar
 related_publications: true
