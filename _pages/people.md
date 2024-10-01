@@ -5,7 +5,7 @@ permalink: /people/
 description:
 nav: true
 nav_order: 4
-display_categories: [Professor, PhD, MS, Undergraduate, Alumni]
+display_categories: [Professor, PhD, MS, Undergraduate, Visiting Scholar, Alumni]
 horizontal: false
 ---
 
