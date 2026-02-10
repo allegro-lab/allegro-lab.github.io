@@ -1,5 +1,7 @@
 # Allegro Lab Website
 
+**Please don't be shy and add your accomplishments to the page! If you want to add features to the webpage using Claude Code, that's ok too -- just make sure that the code is dead simple to maintain.**
+
 The entire site is a single `index.html` file. No build step, no dependencies.
 
 ## How to edit
