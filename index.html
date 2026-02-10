@@ -102,7 +102,7 @@
 
     .people-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
       gap: 24px;
     }
 
@@ -173,17 +173,27 @@
     /* ========== PROJECTS ========== */
     .project-list {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
       gap: 16px;
     }
 
     .project-link {
-      display: block;
+      display: flex;
+      align-items: center;
+      gap: 16px;
       padding: 20px;
       border: 1px solid #eee;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.06);
       transition: box-shadow 0.2s;
+    }
+
+    .project-link img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      flex-shrink: 0;
+      margin: -10px;
     }
 
     .project-link:hover {
@@ -338,9 +348,6 @@
           <div class="person-links">
             <a href="https://johntzwei.github.io/">Website</a>
           </div>
-          <div class="person-bio">
-            Johnny is a PhD student at USC studying natural language processing and machine learning. His research focuses on understanding memorization in large language models, building tools for scientific study of LLMs, and improving the reliability of NLP systems. Before USC, he graduated from the University of Massachusetts Amherst. In his free time he enjoys hiking and cooking. This is placeholder text to demonstrate that bios longer than five lines will be truncated automatically.
-          </div>
           <div class="person-pub">
             <span class="pub-title">Hubble: a Model Suite to Advance the Study of LLM Memorization.</span>
             <span class="pub-venue">ICLR 2026.</span>
@@ -394,9 +401,14 @@
       <div class="people-grid">
 
         <div class="person-card">
-          <img src="img/favicon.png" alt="Photo">
-          <div class="person-name">Undergrad Name</div>
-          <div class="person-role">Undergraduate</div>
+          <img src="img/ryan.jpg" alt="Photo">
+          <div class="person-name">Ryan Wang</div>
+          <div class="person-role">Undergraduate &rarr; PhD at UC Berkeley</div>
+          <div class="person-pub">
+            <span class="pub-title">Proving membership in LLM pretraining data via data watermarks.</span>
+            <span class="pub-venue">Findings of ACL 2024.</span>
+            <a href="https://arxiv.org/abs/2402.10892">[paper]</a>
+          </div>
         </div>
 
         <!-- ADD MORE UNDERGRADS HERE -->
@@ -433,15 +445,15 @@
     <h2>Projects</h2>
     <div class="project-list">
 
-      <a class="project-link" href="https://example.com/project1">
-        <div class="project-name">Project Alpha</div>
-        <div class="project-desc">Brief description of this project and what it does.</div>
+      <a class="project-link" href="https://allegro-lab.github.io/hubble/">
+        <img src="https://allegro-lab.github.io/hubble/static/images_static/hubble_patch-min.png" alt="Hubble logo">
+        <div>
+          <div class="project-name">Hubble</div>
+          <div class="project-desc">A suite of open-source LLMs for the scientific study of LLM memorization.</div>
+        </div>
       </a>
 
-      <a class="project-link" href="https://example.com/project2">
-        <div class="project-name">Project Beta</div>
-        <div class="project-desc">Another project description goes here.</div>
-      </a>
+      <!-- ADD MORE PROJECTS HERE (copy a project-link <a> tag above) -->
 
       <!-- ADD MORE PROJECTS HERE (copy a project-link <a> tag above) -->
 
