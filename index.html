@@ -320,8 +320,10 @@
           <strong>G</strong>eneralization, and <strong>Ro</strong>bustness (ALLeGRo) Lab
           is part of the
           <a href="https://cs.usc.edu">Thomas Lord Department of Computer Science</a>
-          at the University of Southern California.
-          We study natural language processing and machine learning. Our research areas:
+          at the University of Southern California, led by
+          <a href="https://robinjia.github.io/">Robin Jia</a>.
+          We study natural language processing and machine learning.
+          Click on a research area to highlight our students working in that area:
         </p>
         <div class="research-areas">
           <button class="area-btn" data-area="llm-science">LLM Science</button>
@@ -347,7 +349,7 @@
 
       <tr>
         <td class="news-date">Feb 2026</td>
-        <td>Johnny gave a talk at the <a href="https://nlp.stanford.edu/seminar/details/johnny_wei_2026.shtml">Stanford NLP Seminar</a>: <em>The Shape of AI Accountability and Its Contours in Copyright</em>.</td>
+        <td>Johnny gave a talk at the <a href="https://nlp.stanford.edu/seminar/details/johnny_wei_2026.shtml">Stanford NLP Seminar</a>! Title:<em>The Shape of AI Accountability and Its Contours in Copyright</em>.</td>
       </tr>
 
       <tr>
@@ -376,7 +378,7 @@
       <h3>Faculty</h3>
       <div class="people-grid">
 
-        <div class="person-card" data-areas="llm-science law-policy reasoning efficiency evaluation">
+        <div class="person-card">
           <img src="img/robin.jpeg" alt="Photo">
           <div class="person-name">Robin Jia</div>
           <div class="person-role">Assistant Professor</div>
@@ -561,7 +563,8 @@
       if (!activeArea) {
         card.classList.remove('dimmed');
       } else {
-        const areas = (card.dataset.areas || '').split(' ');
+        if (!card.dataset.areas) return;
+        const areas = card.dataset.areas.split(' ');
         card.classList.toggle('dimmed', !areas.includes(activeArea));
       }
     });
