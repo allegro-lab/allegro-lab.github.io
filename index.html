@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allegro Lab</title>
+  <meta name="description" content="The AI, Language, Learning, Generalization, and Robustness (ALLeGRo) Lab at USC.">
+  <link rel="icon" href="img/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+  <style>
+    /* ========== BASE STYLES ========== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Alice', Georgia, serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    a { color: #b509ac; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 930px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    h1, h2, h3 { color: #333; }
+    h2 { font-size: 1.6em; margin-bottom: 0.6em; border-bottom: 2px solid #b509ac; padding-bottom: 0.2em; }
+    h3 { font-size: 1.15em; margin-bottom: 0.3em; }
+
+    section { padding: 48px 0; }
+
+    /* ========== NAV ========== */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      z-index: 100;
+      padding: 14px 0;
+    }
+
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    nav .lab-name {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #333;
+    }
+
+    nav .nav-links { display: flex; gap: 20px; flex-wrap: wrap; }
+    nav .nav-links a { color: #555; font-size: 0.95em; }
+    nav .nav-links a:hover { color: #b509ac; text-decoration: none; }
+
+    /* ========== ABOUT ========== */
+    .about-content {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .about-content .logo {
+      width: 200px;
+      flex-shrink: 0;
+    }
+
+    .about-content .logo img {
+      width: 100%;
+      height: auto;
+    }
+
+    .about-text p { margin-bottom: 1em; }
+
+    /* ========== NEWS ========== */
+    .news-table { width: 100%; border-collapse: collapse; }
+    .news-table td { padding: 8px 0; vertical-align: top; }
+    .news-table .news-date {
+      width: 120px;
+      color: #b509ac;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    .news-table tr + tr td { border-top: 1px solid #f0f0f0; }
+
+    /* ========== PEOPLE ========== */
+    .people-group { margin-bottom: 40px; }
+    .people-group h3 {
+      font-size: 1.3em;
+      color: #b509ac;
+      margin-bottom: 16px;
+    }
+
+    .people-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .person-card {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .person-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      float: left;
+      margin-right: 16px;
+      margin-bottom: 8px;
+    }
+
+    .person-card .person-name {
+      font-weight: bold;
+      font-size: 1.05em;
+    }
+
+    .person-card .person-role {
+      color: #777;
+      font-size: 0.9em;
+      margin-bottom: 4px;
+    }
+
+    .person-card .person-links {
+      font-size: 0.85em;
+    }
+
+    .person-card .person-pub {
+      clear: both;
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid #f0f0f0;
+      font-size: 0.88em;
+      color: #555;
+    }
+
+    .person-card .person-pub .pub-title {
+      font-style: italic;
+    }
+
+    .person-card .person-pub .pub-venue {
+      color: #999;
+    }
+
+    /* ========== PROJECTS ========== */
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .project-link {
+      display: block;
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      transition: box-shadow 0.2s;
+    }
+
+    .project-link:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      text-decoration: none;
+    }
+
+    .project-link .project-name {
+      font-weight: bold;
+      color: #b509ac;
+      margin-bottom: 4px;
+    }
+
+    .project-link .project-desc {
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    /* ========== FOOTER ========== */
+    footer {
+      background: #1c1c1d;
+      color: #aaa;
+      text-align: center;
+      padding: 32px 0;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    footer a { color: #ccc; }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 600px) {
+      .about-content { flex-direction: column; align-items: center; text-align: center; }
+      .about-content .logo { width: 150px; }
+      .people-grid { grid-template-columns: 1fr; }
+      .project-list { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- NAV                                                          -->
+<!-- ============================================================ -->
+<nav>
+  <div class="container">
+    <span class="lab-name">Allegro Lab</span>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#people">People</a>
+      <a href="#projects">Projects</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================ -->
+<!-- ABOUT SECTION                                                -->
+<!-- ============================================================ -->
+<section id="about">
+  <div class="container">
+    <div class="about-content">
+      <div class="logo">
+        <img src="img/logo.png" alt="Allegro Lab logo">
+      </div>
+      <div class="about-text">
+        <h1>ALLeGRo Lab</h1>
+        <p>
+          The <strong>A</strong>I, <strong>L</strong>anguage, <strong>Le</strong>arning,
+          <strong>G</strong>eneralization, and <strong>Ro</strong>bustness (ALLeGRo) Lab
+          is part of the
+          <a href="https://cs.usc.edu">Thomas Lord Department of Computer Science</a>
+          at the University of Southern California.
+        </p>
+        <p>
+          <!-- TODO: Add your lab description here. -->
+          We study natural language processing and machine learning.
+          Replace this placeholder with your research description.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- NEWS SECTION                                                 -->
+<!-- To add a news item: copy a <tr> block and fill in the date   -->
+<!-- and description.                                             -->
+<!-- ============================================================ -->
+<section id="news">
+  <div class="container">
+    <h2>News</h2>
+    <table class="news-table">
+
+      <tr>
+        <td class="news-date">Feb 2025</td>
+        <td>Placeholder: Jane gave an invited talk at XYZ Conference.</td>
+      </tr>
+
+      <tr>
+        <td class="news-date">Jan 2025</td>
+        <td>Placeholder: Two papers accepted to ABC 2025.</td>
+      </tr>
+
+      <tr>
+        <td class="news-date">Sep 2024</td>
+        <td>Placeholder: Welcome new PhD students!</td>
+      </tr>
+
+      <!-- ADD MORE NEWS ITEMS HERE (copy a <tr> block above) -->
+
+    </table>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PEOPLE SECTION                                               -->
+<!-- To add a person: copy a "person-card" div and fill in the    -->
+<!-- details. To add a new group (e.g. Postdocs), copy a          -->
+<!-- "people-group" div.                                          -->
+<!-- ============================================================ -->
+<section id="people">
+  <div class="container">
+    <h2>People</h2>
+
+    <!-- ---- Faculty ---- -->
+    <div class="people-group">
+      <h3>Faculty</h3>
+      <div class="people-grid">
+
+        <div class="person-card">
+          <img src="img/robin.jpeg" alt="Photo">
+          <div class="person-name">Jane Doe</div>
+          <div class="person-role">Assistant Professor</div>
+          <div class="person-links">
+            <a href="https://example.com">Website</a>
+          </div>
+          <div class="person-pub">
+            <span class="pub-title">An Example Paper Title.</span>
+            <span class="pub-venue">NeurIPS 2024.</span>
+            <a href="https://arxiv.org/abs/0000.00000">[paper]</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ---- PhD Students ---- -->
+    <div class="people-group">
+      <h3>PhD Students</h3>
+      <div class="people-grid">
+
+        <div class="person-card">
+          <img src="img/johnny.jpeg" alt="Photo">
+          <div class="person-name">Student One</div>
+          <div class="person-role">PhD Student</div>
+          <div class="person-links">
+            <a href="https://example.com">Website</a>
+          </div>
+          <div class="person-pub">
+            <span class="pub-title">Another Example Paper.</span>
+            <span class="pub-venue">ACL 2024.</span>
+            <a href="https://arxiv.org/abs/0000.00000">[paper]</a>
+          </div>
+        </div>
+
+        <div class="person-card">
+          <img src="img/yuqing.jpg" alt="Photo">
+          <div class="person-name">Student Two</div>
+          <div class="person-role">PhD Student</div>
+          <div class="person-links">
+            <a href="https://example.com">Website</a>
+          </div>
+          <div class="person-pub">
+            <span class="pub-title">Yet Another Paper Title.</span>
+            <span class="pub-venue">EMNLP 2023.</span>
+            <a href="https://arxiv.org/abs/0000.00000">[paper]</a>
+          </div>
+        </div>
+
+        <!-- ADD MORE PHD STUDENTS HERE (copy a person-card div above) -->
+
+      </div>
+    </div>
+
+    <!-- ---- MS Students ---- -->
+    <div class="people-group">
+      <h3>MS Students</h3>
+      <div class="people-grid">
+
+        <div class="person-card">
+          <img src="img/favicon.png" alt="Photo">
+          <div class="person-name">MS Student Name</div>
+          <div class="person-role">MS Student</div>
+          <div class="person-pub">
+            <span class="pub-title">Paper Title Here.</span>
+            <span class="pub-venue">Workshop 2024.</span>
+            <a href="#">[paper]</a>
+          </div>
+        </div>
+
+        <!-- ADD MORE MS STUDENTS HERE -->
+
+      </div>
+    </div>
+
+    <!-- ---- Undergraduate Students ---- -->
+    <div class="people-group">
+      <h3>Undergraduate Students</h3>
+      <div class="people-grid">
+
+        <div class="person-card">
+          <img src="img/favicon.png" alt="Photo">
+          <div class="person-name">Undergrad Name</div>
+          <div class="person-role">Undergraduate</div>
+        </div>
+
+        <!-- ADD MORE UNDERGRADS HERE -->
+
+      </div>
+    </div>
+
+    <!-- ---- Alumni ---- -->
+    <div class="people-group">
+      <h3>Alumni</h3>
+      <div class="people-grid">
+
+        <div class="person-card">
+          <img src="img/favicon.png" alt="Photo">
+          <div class="person-name">Alumni Name</div>
+          <div class="person-role">PhD 2024 &rarr; Company/University</div>
+        </div>
+
+        <!-- ADD MORE ALUMNI HERE -->
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PROJECTS SECTION                                             -->
+<!-- To add a project: copy a "project-link" <a> tag and fill in  -->
+<!-- the URL, name, and description.                              -->
+<!-- ============================================================ -->
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="project-list">
+
+      <a class="project-link" href="https://example.com/project1">
+        <div class="project-name">Project Alpha</div>
+        <div class="project-desc">Brief description of this project and what it does.</div>
+      </a>
+
+      <a class="project-link" href="https://example.com/project2">
+        <div class="project-name">Project Beta</div>
+        <div class="project-desc">Another project description goes here.</div>
+      </a>
+
+      <!-- ADD MORE PROJECTS HERE (copy a project-link <a> tag above) -->
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- FOOTER                                                       -->
+<!-- ============================================================ -->
+<footer>
+  <div class="container">
+    <p>Allegro Lab &middot; University of Southern California &middot; Los Angeles, CA</p>
+  </div>
+</footer>
+
+</body>
+</html>
