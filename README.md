@@ -8,11 +8,11 @@ Open `index.html` and edit the HTML directly. Each section is marked with commen
 
 ### Add a news item
 
-Copy a `<tr>` block in the News section:
+Copy a `<tr>` block in the News section. Add new items at the top (most recent first). Only the 7 most recent items are shown on the page; older items are automatically hidden.
 
 ```html
 <tr>
-  <td class="news-date">Feb 2025</td>
+  <td class="news-date">Feb 2026</td>
   <td>Description of the news item.</td>
 </tr>
 ```
@@ -22,7 +22,7 @@ Copy a `<tr>` block in the News section:
 Copy a `person-card` `<div>` into the appropriate group (Faculty, PhD Students, MS Students, etc.):
 
 ```html
-<div class="person-card">
+<div class="person-card" data-areas="llm-science reasoning">
   <img src="img/yourphoto.jpeg" alt="Photo">
   <div class="person-name">Your Name</div>
   <div class="person-role">PhD Student</div>
@@ -40,8 +40,10 @@ Copy a `person-card` `<div>` into the appropriate group (Faculty, PhD Students, 
 </div>
 ```
 
-- Add your photo to the `img/` folder and reference it in the `src` attribute.
+- Add your photo to the `img/` folder and reference it in the `src` attribute. If no photo is available, use `img/favicon.png` as a placeholder.
 - The `person-bio`, `person-links`, and `person-pub` sections are all optional.
+- Use `data-areas` to tag research areas (space-separated). Valid areas: `llm-science`, `law-policy`, `reasoning`, `efficiency`, `evaluation`. These render as clickable tags and power the research area filter.
+- For alumni, set the role to show their trajectory, e.g. `Undergraduate &rarr; PhD at UC Berkeley`.
 
 ### Add a project link
 

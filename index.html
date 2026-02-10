@@ -224,6 +224,60 @@
 
     footer a { color: #ccc; }
 
+    /* ========== RESEARCH AREA BUTTONS ========== */
+    .research-areas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .area-btn {
+      background: #f5f0f5;
+      border: 1.5px solid #b509ac;
+      color: #b509ac;
+      padding: 4px 16px;
+      border-radius: 20px;
+      font-family: 'Alice', Georgia, serif;
+      font-size: 0.9em;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .area-btn:hover {
+      background: #f0e0f0;
+    }
+
+    .area-btn.active {
+      background: #b509ac;
+      color: #fff;
+    }
+
+    .person-card {
+      transition: opacity 0.3s;
+    }
+
+    .person-card.dimmed {
+      opacity: 0.15;
+    }
+
+    .person-areas {
+      margin-top: 6px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .person-area-tag {
+      font-size: 0.75em;
+      padding: 1px 10px;
+      border-radius: 12px;
+      background: #f5f0f5;
+      color: #b509ac;
+      border: 1px solid #e0d0e0;
+      white-space: nowrap;
+    }
+
     /* ========== RESPONSIVE ========== */
     @media (max-width: 600px) {
       .about-content { flex-direction: column; align-items: center; text-align: center; }
@@ -267,12 +321,15 @@
           is part of the
           <a href="https://cs.usc.edu">Thomas Lord Department of Computer Science</a>
           at the University of Southern California.
+          We study natural language processing and machine learning. Our research areas:
         </p>
-        <p>
-          <!-- TODO: Add your lab description here. -->
-          We study natural language processing and machine learning.
-          Replace this placeholder with your research description.
-        </p>
+        <div class="research-areas">
+          <button class="area-btn" data-area="llm-science">LLM Science</button>
+          <button class="area-btn" data-area="law-policy">Law &amp; Policy</button>
+          <button class="area-btn" data-area="reasoning">Reasoning</button>
+          <button class="area-btn" data-area="efficiency">Efficiency</button>
+          <button class="area-btn" data-area="evaluation">Evaluation</button>
+        </div>
       </div>
     </div>
   </div>
@@ -289,18 +346,13 @@
     <table class="news-table">
 
       <tr>
-        <td class="news-date">Feb 2025</td>
-        <td>Placeholder: Jane gave an invited talk at XYZ Conference.</td>
+        <td class="news-date">Feb 2026</td>
+        <td>Johnny gave a talk at the <a href="https://nlp.stanford.edu/seminar/details/johnny_wei_2026.shtml">Stanford NLP Seminar</a>: <em>The Shape of AI Accountability and Its Contours in Copyright</em>.</td>
       </tr>
 
       <tr>
-        <td class="news-date">Jan 2025</td>
-        <td>Placeholder: Two papers accepted to ABC 2025.</td>
-      </tr>
-
-      <tr>
-        <td class="news-date">Sep 2024</td>
-        <td>Placeholder: Welcome new PhD students!</td>
+        <td class="news-date">Jan 2026</td>
+        <td><a href="https://arxiv.org/abs/2510.19811">Hubble</a> has been accepted to ICLR 2026!</td>
       </tr>
 
       <!-- ADD MORE NEWS ITEMS HERE (copy a <tr> block above) -->
@@ -324,7 +376,7 @@
       <h3>Faculty</h3>
       <div class="people-grid">
 
-        <div class="person-card">
+        <div class="person-card" data-areas="llm-science law-policy reasoning efficiency evaluation">
           <img src="img/robin.jpeg" alt="Photo">
           <div class="person-name">Robin Jia</div>
           <div class="person-role">Assistant Professor</div>
@@ -341,7 +393,7 @@
       <h3>PhD Students</h3>
       <div class="people-grid">
 
-        <div class="person-card">
+        <div class="person-card" data-areas="llm-science law-policy">
           <img src="img/johnny.jpeg" alt="Photo">
           <div class="person-name">Johnny Tian-Zheng Wei</div>
           <div class="person-role">PhD Student</div>
@@ -355,21 +407,10 @@
           </div>
         </div>
 
-        <div class="person-card">
-          <img src="img/yuqing.jpg" alt="Photo">
-          <div class="person-name">Student Two</div>
-          <div class="person-role">PhD Student</div>
-          <div class="person-links">
-            <a href="https://example.com">Website</a>
-          </div>
-          <div class="person-pub">
-            <span class="pub-title">Yet Another Paper Title.</span>
-            <span class="pub-venue">EMNLP 2023.</span>
-            <a href="https://arxiv.org/abs/0000.00000">[paper]</a>
-          </div>
-        </div>
-
-        <!-- ADD MORE PHD STUDENTS HERE (copy a person-card div above) -->
+        <!-- ADD MORE PHD STUDENTS HERE
+             Set data-areas to tag research areas (space-separated):
+             llm-science, law-policy, reasoning, efficiency, evaluation
+             Example: <div class="person-card" data-areas="llm-science reasoning"> -->
 
       </div>
     </div>
@@ -410,7 +451,7 @@
       <h3>Alumni</h3>
       <div class="people-grid">
 
-        <div class="person-card">
+        <div class="person-card" data-areas="llm-science">
           <img src="img/ryan.jpg" alt="Photo">
           <div class="person-name">Ryan Wang</div>
           <div class="person-role">Undergraduate &rarr; PhD at UC Berkeley</div>
@@ -424,7 +465,7 @@
           </div>
         </div>
 
-        <div class="person-card">
+        <div class="person-card" data-areas="llm-science">
           <img src="img/lorena.JPG" alt="Photo">
           <div class="person-name">Lorena Yan</div>
           <div class="person-role">Undergraduate &rarr; PhD at Columbia University</div>
@@ -435,6 +476,30 @@
             <span class="pub-title">Promote, Suppress, Iterate: How Language Models Answer One-to-Many Factual Queries.</span>
             <span class="pub-venue">EMNLP 2025.</span>
             <a href="https://arxiv.org/abs/2502.20475">[paper]</a>
+          </div>
+        </div>
+
+        <div class="person-card" data-areas="reasoning llm-science">
+          <img src="img/favicon.png" alt="Photo">
+          <div class="person-name">Qilin Ye</div>
+          <div class="person-role">Undergraduate &rarr; MS at Duke University</div>
+          <div class="person-pub">
+            <span class="pub-title">When Do Transformers Learn Heuristics for Graph Connectivity?</span>
+            <a href="https://arxiv.org/abs/2510.19753">[paper]</a>
+          </div>
+        </div>
+
+        <div class="person-card" data-areas="evaluation">
+          <img src="img/harvey-fu.png" alt="Photo">
+          <div class="person-name">Harvey Yiyun Fu</div>
+          <div class="person-role">Undergraduate &rarr; PhD at UChicago</div>
+          <div class="person-links">
+            <a href="https://harvey-fin.github.io/">Website</a>
+          </div>
+          <div class="person-pub">
+            <span class="pub-title">Estimating Large Language Model Capabilities without Labeled Test Data.</span>
+            <span class="pub-venue">Findings of EMNLP 2023.</span>
+            <a href="https://arxiv.org/abs/2305.14802">[paper]</a>
           </div>
         </div>
 
@@ -480,6 +545,69 @@
     <p>Allegro Lab &middot; University of Southern California &middot; Los Angeles, CA</p>
   </div>
 </footer>
+
+<script>
+  function filterByArea(area) {
+    const currentBtn = document.querySelector('.area-btn.active');
+    const wasActive = currentBtn && currentBtn.dataset.area === area;
+
+    document.querySelectorAll('.area-btn').forEach(b => b.classList.remove('active'));
+    if (!wasActive) {
+      document.querySelector('.area-btn[data-area="' + area + '"]').classList.add('active');
+    }
+
+    const activeArea = wasActive ? null : area;
+    document.querySelectorAll('.person-card').forEach(card => {
+      if (!activeArea) {
+        card.classList.remove('dimmed');
+      } else {
+        const areas = (card.dataset.areas || '').split(' ');
+        card.classList.toggle('dimmed', !areas.includes(activeArea));
+      }
+    });
+  }
+
+  function clearFilter() {
+    document.querySelectorAll('.area-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.person-card').forEach(c => c.classList.remove('dimmed'));
+  }
+
+  // Build area key → display name map from buttons
+  const areaNames = {};
+  document.querySelectorAll('.area-btn').forEach(b => { areaNames[b.dataset.area] = b.textContent; });
+
+  // Render area tags on each person card from data-areas
+  document.querySelectorAll('.person-card[data-areas]').forEach(card => {
+    const areas = card.dataset.areas.split(' ');
+    const container = document.createElement('div');
+    container.className = 'person-areas';
+    areas.forEach(area => {
+      const tag = document.createElement('span');
+      tag.className = 'person-area-tag';
+      tag.textContent = areaNames[area] || area;
+      tag.style.cursor = 'pointer';
+      tag.addEventListener('click', (e) => { e.stopPropagation(); filterByArea(area); });
+      container.appendChild(tag);
+    });
+    card.querySelector('.person-links, .person-role').after(container);
+  });
+
+  document.querySelectorAll('.area-btn').forEach(btn => {
+    btn.addEventListener('click', () => filterByArea(btn.dataset.area));
+  });
+
+  // Only show the 7 most recent news items
+  document.querySelectorAll('.news-table tr').forEach((tr, i) => {
+    if (i >= 7) tr.style.display = 'none';
+  });
+
+  // Clicking a dimmed card clears the filter
+  document.querySelectorAll('.person-card').forEach(card => {
+    card.addEventListener('click', () => {
+      if (card.classList.contains('dimmed')) clearFilter();
+    });
+  });
+</script>
 
 </body>
 </html>
