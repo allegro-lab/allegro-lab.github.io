@@ -56,7 +56,7 @@ Copy a `project-link` `<a>` tag in the Projects section:
 
 ## Rules
 
-1. **Bios are clamped to 5 lines.** Anything longer is hidden with overflow. Keep bios concise.
+1. **Bios are clamped to 8 lines, publications to 5 lines.** Anything longer is hidden with overflow. Keep them concise.
 2. **Check your changes with Claude or another LLM before pushing.** Ask it to proofread for typos and broken HTML.
 3. **Undergrads:** Contact your mentor to be added to the site. Do not add yourself directly.
 4. **Photos:** Add images to the `img/` folder. Use reasonable file sizes (under 1MB ideally).
