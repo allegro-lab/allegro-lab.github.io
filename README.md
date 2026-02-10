@@ -2,7 +2,7 @@
 
 **Please don't be shy and add your accomplishments to the page! If you want to add features to the webpage using Claude Code, that's ok too -- just make sure that the code is dead simple to maintain.**
 
-The entire site is a single `index.html` file. No build step, no dependencies.
+The site is just `index.html` and `style.css`. No build step, no dependencies.
 
 ## How to edit
 
@@ -64,7 +64,7 @@ Copy a `project-link` `<a>` tag in the Projects section:
 2. **Check your changes with Claude or another LLM before pushing.** Ask it to proofread for typos and broken HTML.
 3. **Undergrads:** Contact your mentor to be added to the site. Do not add yourself directly.
 4. **Photos:** Add images to the `img/` folder. Use reasonable file sizes (under 1MB ideally).
-5. **Keep it simple.** This site is intentionally one file. Don't add build tools, frameworks, or external CSS.
+5. **Keep it simple.** Don't add build tools, frameworks, or external dependencies.
 
 ## Deploying
 
