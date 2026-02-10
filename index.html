@@ -138,6 +138,17 @@
       font-size: 0.85em;
     }
 
+    .person-card .person-bio {
+      clear: both;
+      margin-top: 8px;
+      font-size: 0.9em;
+      color: #555;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
     .person-card .person-pub {
       clear: both;
       margin-top: 12px;
@@ -322,6 +333,9 @@
           <div class="person-role">PhD Student</div>
           <div class="person-links">
             <a href="https://johntzwei.github.io/">Website</a>
+          </div>
+          <div class="person-bio">
+            <!-- Add a short bio here. It will be clamped to 5 lines. -->
           </div>
           <div class="person-pub">
             <span class="pub-title">Hubble: a Model Suite to Advance the Study of LLM Memorization.</span>
