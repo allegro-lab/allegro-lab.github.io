@@ -52,6 +52,7 @@
           <button class="area-btn" data-area="law-policy">Law &amp; Policy</button>
           <button class="area-btn" data-area="reasoning">Reasoning</button>
           <button class="area-btn" data-area="efficiency">Efficiency</button>
+          <button class="area-btn" data-area="interpretability">Interpretability</button>
           <button class="area-btn" data-area="evaluation">Evaluation</button>
         </div>
       </div>
@@ -71,17 +72,17 @@
 
       <tr>
         <td class="news-date">Feb 2026</td>
-        <td>Johnny gave a talk at the <a href="https://nlp.stanford.edu/seminar/details/johnny_wei_2026.shtml">Stanford NLP Seminar</a>! Title:<em>The Shape of AI Accountability and Its Contours in Copyright</em>.</td>
+        <td>Johnny gave a talk at the <a href="https://nlp.stanford.edu/seminar/details/johnny_wei_2026.shtml">Stanford NLP Seminar</a>! Title: <em>The Shape of AI Accountability and Its Contours in Copyright</em>.</td>
       </tr>
 
       <tr>
         <td class="news-date">Jan 2026</td>
-        <td><a href="https://arxiv.org/abs/2510.19811">Hubble</a> and <a href="https://fouriernumber.github.io/">FoNE</a> has been accepted to ICLR 2026!</td>
+        <td><a href="https://arxiv.org/abs/2510.19811">Hubble</a> and <a href="https://fouriernumber.github.io/">FoNE</a> have been accepted to ICLR 2026!</td>
       </tr>
 
       <tr>
         <td class="news-date">May 2025</td>
-        <td>Deqing gave a talk at the <a href="https://nlp.stanford.edu/seminar/details/deqing_fu_2025.shtml">Stanford NLP Seminar</a>! Title:<em>Closing the Modality Gap: Benchmarking and Improving Visual Understanding in Multimodal LLMs</em>.</td>
+        <td>Deqing gave a talk at the <a href="https://nlp.stanford.edu/seminar/details/deqing_fu_2025.shtml">Stanford NLP Seminar</a>! Title: <em>Closing the Modality Gap: Benchmarking and Improving Visual Understanding in Multimodal LLMs</em>.</td>
       </tr>
 
       <!-- ADD MORE NEWS ITEMS HERE (copy a <tr> block above) -->
@@ -136,30 +137,49 @@
           </div>
         </div>
 
-        <div class="person-card">
-          <img src="img/yuqing.jpg" alt="Photo">
-          <div class="person-name">Student Two</div>
+        <div class="person-card" data-areas="llm-science evaluation">
+          <img src="img/ameya.jpeg" alt="Photo">
+          <div class="person-name">Ameya Godbole</div>
           <div class="person-role">PhD Student</div>
           <div class="person-links">
-            <a href="https://example.com">Website</a>
+            <a href="https://ameyagodbole.github.io/">Website</a>
           </div>
           <div class="person-pub">
-            <span class="pub-title">Yet Another Paper Title.</span>
-            <span class="pub-venue">EMNLP 2023.</span>
-            <a href="https://arxiv.org/abs/0000.00000">[paper]</a>
+            <span class="pub-title">Analysis of Plan-based Retrieval for Grounded Text Generation.</span>
+            <span class="pub-venue">EMNLP 2024.</span>
+            <a href="https://aclanthology.org/2024.emnlp-main.727">[paper]</a>
           </div>
         </div>
 
-        <div class="person-card">
+        <div class="person-card" data-areas="reasoning evaluation">
           <img src="img/bill-zhu.jpg" alt="Photo">
           <div class="person-name">Wang Bill Zhu</div>
           <div class="person-role">PhD Student</div>
           <div class="person-links">
             <a href="https://billzhu.me">Website</a>
           </div>
+          <div class="person-pub">
+            <span class="pub-title">Efficient End-to-End Visual Document Understanding with Rationale Distillation.</span>
+            <span class="pub-venue">NAACL 2024.</span>
+            <a href="https://aclanthology.org/2024.naacl-long.465">[paper]</a>
+          </div>
         </div>
 
-        <div class="person-card" data-areas="llm-science">
+        <div class="person-card" data-areas="interpretability efficiency">
+          <img src="img/ting-yun.jpg" alt="Photo">
+          <div class="person-name">Ting-Yun (Charlotte) Chang</div>
+          <div class="person-role">PhD Student</div>
+          <div class="person-links">
+            <a href="https://terarachang.github.io/">Website</a>
+          </div>
+          <div class="person-pub">
+            <span class="pub-title">When Parts Are Greater Than Sums: Individual LLM Components Can Outperform Full Models.</span>
+            <span class="pub-venue">EMNLP 2024.</span>
+            <a href="https://arxiv.org/abs/2406.13131">[paper]</a>
+          </div>
+        </div>
+
+        <div class="person-card" data-areas="interpretability reasoning">
           <img src="img/deqing.jpeg" alt="Photo">
           <div class="person-name">Deqing Fu</div>
           <div class="person-role">PhD Student</div>
@@ -173,9 +193,51 @@
           </div>
         </div>
 
+        <div class="person-card" data-areas="interpretability">
+          <img src="img/tianyi.jpeg" alt="Photo">
+          <div class="person-name">Tianyi Zhou</div>
+          <div class="person-role">PhD Student</div>
+          <div class="person-links">
+            <a href="https://kevinzhoutianyi.github.io/">Website</a>
+          </div>
+          <div class="person-pub">
+            <span class="pub-title">Pretrained Large Language Models Use Fourier Features to Compute Addition.</span>
+            <span class="pub-venue">NeurIPS 2024.</span>
+            <a href="https://arxiv.org/abs/2406.03445">[paper]</a>
+          </div>
+        </div>
+
+        <div class="person-card" data-areas="llm-science reasoning">
+          <img src="img/yuqing.jpg" alt="Photo">
+          <div class="person-name">Yuqing Yang</div>
+          <div class="person-role">PhD Student</div>
+          <div class="person-links">
+            <a href="https://ayyyq.github.io/">Website</a>
+          </div>
+          <div class="person-pub">
+            <span class="pub-title">When Do LLMs Admit Their Mistakes? Understanding the Role of Model Belief in Retraction.</span>
+            <span class="pub-venue">arXiv 2025.</span>
+            <a href="https://arxiv.org/abs/2505.16170">[paper]</a>
+          </div>
+        </div>
+
+        <div class="person-card" data-areas="efficiency llm-science">
+          <img src="img/muru.jpeg" alt="Photo">
+          <div class="person-name">Muru Zhang</div>
+          <div class="person-role">PhD Student</div>
+          <div class="person-links">
+            <a href="https://nanami18.github.io/">Website</a>
+          </div>
+          <div class="person-pub">
+            <span class="pub-title">How Language Model Hallucinations Can Snowball.</span>
+            <span class="pub-venue">ICML 2024.</span>
+            <a href="https://arxiv.org/abs/2305.13534">[paper]</a>
+          </div>
+        </div>
+
         <!-- ADD MORE PHD STUDENTS HERE
              Set data-areas to tag research areas (space-separated):
-             llm-science, law-policy, reasoning, efficiency, evaluation
+             llm-science, law-policy, reasoning, efficiency, interpretability, evaluation
              Example: <div class="person-card" data-areas="llm-science reasoning"> -->
 
       </div>
@@ -192,11 +254,11 @@
           <div class="person-role">MS Student</div>
           <div class="person-links">
             <a href="https://jeli04.github.io">Website</a>
-            <a href="https://www.linkedin.com/in/jerryli2025/">Linkedin</a>
+            <a href="https://www.linkedin.com/in/jerryli2025/">LinkedIn</a>
           </div>
           <div class="person-pub">
             <span class="pub-title">Are LLMs Reliable Rankers? Rank Manipulation via Two-Stage Token Optimization.</span>
-            <span class="pub-venue">arxiv.</span>
+            <span class="pub-venue">arXiv.</span>
             <a href="https://arxiv.org/abs/2510.06732">[paper]</a>
           </div>
         </div>
@@ -235,7 +297,7 @@
           </div>
         </div>
 
-        <div class="person-card" data-areas="llm-science">
+        <div class="person-card" data-areas="interpretability">
           <img src="img/lorena.JPG" alt="Photo">
           <div class="person-name">Lorena Yan</div>
           <div class="person-role">Undergraduate &rarr; PhD at Columbia University</div>
@@ -249,7 +311,7 @@
           </div>
         </div>
 
-        <div class="person-card" data-areas="reasoning llm-science">
+        <div class="person-card" data-areas="interpretability reasoning">
           <img src="img/favicon.png" alt="Photo">
           <div class="person-name">Qilin Ye</div>
           <div class="person-role">Undergraduate &rarr; MS at Duke University</div>
@@ -298,8 +360,6 @@
           <div class="project-desc">A suite of open-source LLMs for the scientific study of LLM memorization.</div>
         </div>
       </a>
-
-      <!-- ADD MORE PROJECTS HERE (copy a project-link <a> tag above) -->
 
       <!-- ADD MORE PROJECTS HERE (copy a project-link <a> tag above) -->
 
